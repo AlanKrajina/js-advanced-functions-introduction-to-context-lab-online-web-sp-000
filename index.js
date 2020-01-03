@@ -28,8 +28,8 @@ function createTimeInEvent(record,date){
 */
   let newTime = {
     type: 'TimeIn',
-    hour: time.slice(-4),
-    date: time.slice(0,10)
+    hour: date.slice(-4),
+    date: date.slice(0,10)
   }
 
   record.timeInEvents.push(newTime)
