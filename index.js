@@ -19,7 +19,7 @@ function createEmployeeRecords(twoRows){
 function createTimeInEvent(record,time){
 
   let newTime = {
-    type: 'TimeOut',
+    type: 'TimeIn',
     hour: time.slice(-4),
     date: time.slice(0,10)
   }
