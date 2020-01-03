@@ -18,13 +18,21 @@ function createEmployeeRecords(twoRows){
 
 function createTimeInEvent(record,time){
 
+  let day = date.split(" ")[0]
+  let time = date.split(" ")[1]
+  let timeRecord = {
+      type: "TimeIn",
+      hour: parseInt(time, 10),
+      date: day
+  }
+
   let newTime = {
     type: 'TimeIn',
     hour: time.slice(-4),
     date: time.slice(0,10)
   }
 
-  let newObj = record.timeInEvents.push(newTime)
+  let newObj = record.timeInEvents.push(timeRecord)
   return newObj
 //  return record.map(person => createEmployeeRecord(person.push(newTime)))
 
