@@ -37,8 +37,18 @@ function createTimeOutEvent(record,date){
 }
 
 function hoursWorkedOnDate(record,date){
+
+//timeInEvent and timeOutEvent oduzet da se dobije brojka
+
   let newTime = {
     hour: parseInt(date.slice(-4),10),
   }
-  return newTime.hour
+
+  // old time - record.
+
+  let oldTime = record.timeInEvents
+  
+  return newTime - oldTime
+  
+  //return newTime.hour
 }
