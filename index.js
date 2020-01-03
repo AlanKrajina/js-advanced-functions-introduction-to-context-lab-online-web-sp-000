@@ -34,6 +34,6 @@ function createTimeOutEvent(record,date){
     hour: parseInt(date.slice(-4),10),
     date: date.slice(0,10)
   }
-  record.timeInEvents.push(newTime)
+  record.timeOutEvents.push(newTime)
   return record
 }
