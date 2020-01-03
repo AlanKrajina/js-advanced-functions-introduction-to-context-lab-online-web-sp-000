@@ -28,7 +28,7 @@ function createTimeInEvent(record,date){
 */
   let newTime = {
     type: 'TimeIn',
-    hour: date.slice(-4).toInteger,
+    hour: parseInt(date.slice(-4),10),
     date: date.slice(0,10)
   }
 
