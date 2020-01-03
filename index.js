@@ -17,22 +17,12 @@ function createEmployeeRecords(twoRows){
 
 
 function createTimeInEvent(record,date){
-/*
-  let day = date.split(" ")[0]
-  let time = date.split(" ")[1]
-  let timeRecord = {
-      type: "TimeIn",
-      hour: parseInt(time, 10),
-      date: day
-  }
-*/
+
   let newTime = {
     type: 'TimeIn',
     hour: parseInt(date.slice(-4),10),
     date: date.slice(0,10)
   }
-
   record.timeInEvents.push(newTime)
   return record
-
 }
