@@ -5,8 +5,8 @@ function createEmployeeRecord(array){
     familyName: familyName,
     title: title,
     payPerHour: payPerHour,
-    timeInEvents: timeInEvents,
-    timeOutEvents: timeOutEvents
+    timeInEvents: [],
+    timeOutEvents: []
   };
   return obj;
 }
