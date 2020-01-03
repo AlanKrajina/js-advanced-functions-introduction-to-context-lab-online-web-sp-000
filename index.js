@@ -35,3 +35,10 @@ function createTimeOutEvent(record,date){
   record.timeOutEvents.push(newTime)
   return record
 }
+
+function hoursWorkedOnDate(record,date){
+  let newTime = {
+    hour: parseInt(date.slice(-4),10),
+  }
+  return newTime.hour
+}
