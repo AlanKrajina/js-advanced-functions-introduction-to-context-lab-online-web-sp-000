@@ -41,3 +41,9 @@ function hoursWorkedOnDate(record, date) {
     let timeOut = record.timeOutEvents.find(f => f.date === date)
     return (timeOut.hour - timeIn.hour)/100
 }
+
+function wagesEarnedOnDate(record, date) {
+    let timeIn = record.timeInEvents.find(f => f.date === date)
+    let timeOut = record.timeOutEvents.find(f => f.date === date)
+    return (timeOut.hour - timeIn.hour)/100
+}
