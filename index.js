@@ -14,6 +14,6 @@ function createEmployeeRecord(array){
 function createEmployeeRecords(record){
   let employeeRecords = []
   let som = employeeRecords.concat(record)
-  som.flat(); 
+  som.flat();
   return som.map(person => person.firstName)
 }
