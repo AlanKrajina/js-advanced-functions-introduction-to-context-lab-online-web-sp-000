@@ -23,6 +23,7 @@ function createTimeInEvent(record,time){
     hour: time.slice(-4),
     date: time.slice(0,10)
   }
-  return newTime
+
+  return record.map(person => createEmployeeRecord(person.push(newTime)))
 
 }
