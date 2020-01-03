@@ -1,7 +1,7 @@
 // Your code here
 function createEmployeeRecord(array){
   let obj = {
-    firstName:  firstName,
+    firstName: array[0],
     familyName: familyName,
     title: title,
     payPerHour: payPerHour,
