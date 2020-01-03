@@ -15,5 +15,5 @@ function createEmployeeRecords(record){
   let employeeRecords = []
   let som = employeeRecords.concat(record)
 
-  return som.map(person => person.firstName)
+  return som.map(person => person.map(pers => pers.firstName))
 }
