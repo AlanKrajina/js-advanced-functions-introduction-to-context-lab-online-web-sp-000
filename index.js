@@ -25,15 +25,14 @@ function createTimeInEvent(record,date){
       hour: parseInt(time, 10),
       date: day
   }
-
+/*
   let newTime = {
     type: 'TimeIn',
     hour: time.slice(-4),
     date: time.slice(0,10)
   }
-
+*/
   let newObj = record.timeInEvents.push(timeRecord)
   return newObj
-//  return record.map(person => createEmployeeRecord(person.push(newTime)))
 
 }
