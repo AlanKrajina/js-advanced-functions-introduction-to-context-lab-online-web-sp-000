@@ -13,6 +13,6 @@ function createEmployeeRecord(array){
 
 function createEmployeeRecords(record){
   let employeeRecords = []
-  employeeRecords.concat(record)
-  return employeeRecords.map(person => person.firstName)
+  let som = employeeRecords.concat(record)
+  return som.map(person => person.firstName)
 }
