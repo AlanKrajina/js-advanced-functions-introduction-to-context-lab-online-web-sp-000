@@ -16,7 +16,10 @@ function createEmployeeRecords(twoRows){
 }
 
 
-function createTimeInEvent(twoRows){
+function createTimeInEvent(record,time){
   let bpRecord = twoRows.map(person => createEmployeeRecord(person))
 
+
+
+  return empRecord
 }
