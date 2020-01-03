@@ -42,6 +42,3 @@ function hoursWorkedOnDate(record,date){
   }
   return newTime.hour
 }
-
-
-
