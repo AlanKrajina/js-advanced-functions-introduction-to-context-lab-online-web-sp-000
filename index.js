@@ -46,3 +46,23 @@ function wagesEarnedOnDate(record, date) {
     let hours = hoursWorkedOnDate(record,date)
     return hours * record.payPerHour
 }
+
+function allWagesFor(record) {
+    let datesArr = record.timeInEvents.map(time => time.date)
+    let total = 0;
+    datesArr.forEach(date => {
+        total =  total + wagesEarnedOnDate(record, date)
+    })
+    return total
+}
+
+function calculatePayroll(employees) {
+    return employees.reduce((total, e) => total + allWagesFor(e), 0);
+
+}
+
+function findEmployeeByFirstName(srcArray, firstName) {
+    let name = srcArray.filter(s => s.firstName === firstName)
+    console.log("name", name)
+    return name[0]
+}
