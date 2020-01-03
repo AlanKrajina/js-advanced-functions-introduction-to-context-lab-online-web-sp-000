@@ -24,7 +24,7 @@ function createTimeInEvent(record,time){
     date: time.slice(0,10)
   }
 
-  let newObj = record.timeOutEvents.push(newTime)
+  let newObj = record.timeInEvents.push(newTime)
   return newObj
 //  return record.map(person => createEmployeeRecord(person.push(newTime)))
 
