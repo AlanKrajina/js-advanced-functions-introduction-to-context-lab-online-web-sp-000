@@ -32,7 +32,7 @@ function createTimeInEvent(record,date){
     date: time.slice(0,10)
   }
 */
-  let newObj = record.timeInEvents.push(timeRecord)
-  return newObj
+  record.timeInEvents.push(timeRecord)
+  return record
 
 }
