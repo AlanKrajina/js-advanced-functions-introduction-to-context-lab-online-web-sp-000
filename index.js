@@ -48,7 +48,7 @@ function hoursWorkedOnDate(record,date){
 
   let oldTime = record.timeInEvents
 
-  return newTime - oldTime
+  return newTime.hour - oldTime
 
   //return newTime.hour
 }
