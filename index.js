@@ -24,7 +24,5 @@ function createTimeInEvent(record,time){
     date: time.slice(0,10)
   }
 
-  let empRecord = record.map(person => createEmployeeRecord(person))
 
-  return empRecord
 }
