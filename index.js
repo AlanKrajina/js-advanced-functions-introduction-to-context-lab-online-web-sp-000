@@ -15,6 +15,8 @@ function createEmployeeRecords(twoRows ){
   return twoRows.map(person => person[0])
 }
 
+
+
 /*
 function createEmployeeRecords(twoRows ){
   let employeeRecords = []
@@ -22,5 +24,4 @@ function createEmployeeRecords(twoRows ){
 
   return som.map(person => person[0])
 }
-
 */
