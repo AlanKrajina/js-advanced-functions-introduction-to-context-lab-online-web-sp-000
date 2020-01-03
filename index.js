@@ -17,7 +17,6 @@ function createEmployeeRecords(twoRows){
 
 
 function createTimeInEvent(record,date){
-
   let newTime = {
     type: 'TimeIn',
     hour: parseInt(date.slice(-4),10),
@@ -28,7 +27,6 @@ function createTimeInEvent(record,date){
 }
 
 function createTimeOutEvent(record,date){
-
   let newTime = {
     type: 'TimeOut',
     hour: parseInt(date.slice(-4),10),
