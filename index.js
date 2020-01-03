@@ -36,19 +36,10 @@ function createTimeOutEvent(record,date){
   return record
 }
 
-function hoursWorkedOnDate(record,date){
-
-//timeInEvent and timeOutEvent oduzet da se dobije brojka
-
-  let newTime = {
-    hour: parseInt(date.slice(-4),10),
-  }
-
-  // old time - record.
-
-  let oldTime = record.timeInEvents
-
-  return newTime.hour - oldTime
-
-  //return newTime.hour
+function hoursWorkedOnDate(record, date) {
+    let timeIn = record.timeInEvents.find(f => f.date === date)
+    let timeOut = record.timeOutEvents.find(f => f.date === date)
+    return (timeOut.hour - timeIn.hour)/100
+    
 }
+
