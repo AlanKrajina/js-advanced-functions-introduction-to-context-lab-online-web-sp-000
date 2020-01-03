@@ -11,6 +11,11 @@ function createEmployeeRecord(array){
   return obj;
 }
 
-function createEmployeeRecords(twoRows ){
+function createEmployeeRecords(twoRows){
+  return twoRows.map(person => createEmployeeRecord(person))
+}
+
+
+function createTimeInEvent(twoRows){
   return twoRows.map(person => createEmployeeRecord(person))
 }
