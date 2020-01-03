@@ -10,10 +10,12 @@ function createEmployeeRecord(array){
   };
   return obj;
 }
-
+/*
 function createEmployeeRecords(twoRows ){
   let employeeRecords = []
   let som = employeeRecords.concat(twoRows)
 
   return som.map(person => person[0])
 }
+
+*/
