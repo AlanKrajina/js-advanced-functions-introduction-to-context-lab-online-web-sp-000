@@ -10,6 +10,11 @@ function createEmployeeRecord(array){
   };
   return obj;
 }
+
+function createEmployeeRecords(twoRows ){
+  return twoRows.map(person => person[0])
+}
+
 /*
 function createEmployeeRecords(twoRows ){
   let employeeRecords = []
