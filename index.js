@@ -11,6 +11,7 @@ function createEmployeeRecord(array){
   return obj;
 }
 
-function createEmployeeRecords(){
-
+function createEmployeeRecords(record){
+  let employeeRecords = []
+  return employeeRecords.concat(record)
 }
