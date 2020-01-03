@@ -12,7 +12,7 @@ function createEmployeeRecord(array){
 }
 
 function createEmployeeRecords(twoRows ){
-  return twoRows.map(person => person[0])
+  return twoRows.map(person => createEmployeeRecord(person))
 }
 
 
