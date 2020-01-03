@@ -14,14 +14,3 @@ function createEmployeeRecord(array){
 function createEmployeeRecords(twoRows ){
   return twoRows.map(person => createEmployeeRecord(person))
 }
-
-
-
-/*
-function createEmployeeRecords(twoRows ){
-  let employeeRecords = []
-  let som = employeeRecords.concat(twoRows)
-
-  return som.map(person => person[0])
-}
-*/
