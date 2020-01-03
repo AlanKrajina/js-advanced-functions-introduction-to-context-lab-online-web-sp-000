@@ -17,9 +17,14 @@ function createEmployeeRecords(twoRows){
 
 
 function createTimeInEvent(record,time){
-  let empRecord = twoRows.map(person => createEmployeeRecord(person))
 
+  let newTime = {
+    type: 'TimeOut',
+    hour: time.slice(-4),
+    date: time.slice(0,10)
+  }
 
+  let empRecord = record.map(person => createEmployeeRecord(person))
 
   return empRecord
 }
